@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		E9D260751E8E3BB50013C114 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D260741E8E3BB50013C114 /* AppDelegate.swift */; };
-		E9D260771E8E3BB50013C114 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D260761E8E3BB50013C114 /* ViewController.swift */; };
 		E9D260791E8E3BB50013C114 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9D260781E8E3BB50013C114 /* Assets.xcassets */; };
 		E9D2607C1E8E3BB50013C114 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D2607A1E8E3BB50013C114 /* Main.storyboard */; };
+		E9D260851E8E427F0013C114 /* CoreWLAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9D260841E8E427F0013C114 /* CoreWLAN.framework */; };
+		E9D2608A1E8E44CB0013C114 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D260891E8E44CB0013C114 /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E9D260711E8E3BB40013C114 /* WiFiMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiFiMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D260741E8E3BB50013C114 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E9D260761E8E3BB50013C114 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E9D260781E8E3BB50013C114 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9D2607B1E8E3BB50013C114 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9D2607D1E8E3BB50013C114 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9D260841E8E427F0013C114 /* CoreWLAN.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreWLAN.framework; path = System/Library/Frameworks/CoreWLAN.framework; sourceTree = SDKROOT; };
+		E9D260891E8E44CB0013C114 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9D260851E8E427F0013C114 /* CoreWLAN.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,7 +40,9 @@
 			isa = PBXGroup;
 			children = (
 				E9D260731E8E3BB40013C114 /* WiFiMenu */,
+				E9D260871E8E44CB0013C114 /* Vendor */,
 				E9D260721E8E3BB40013C114 /* Products */,
+				E9D260831E8E427F0013C114 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,12 +58,35 @@
 			isa = PBXGroup;
 			children = (
 				E9D260741E8E3BB50013C114 /* AppDelegate.swift */,
-				E9D260761E8E3BB50013C114 /* ViewController.swift */,
 				E9D260781E8E3BB50013C114 /* Assets.xcassets */,
 				E9D2607A1E8E3BB50013C114 /* Main.storyboard */,
 				E9D2607D1E8E3BB50013C114 /* Info.plist */,
 			);
 			path = WiFiMenu;
+			sourceTree = "<group>";
+		};
+		E9D260831E8E427F0013C114 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9D260841E8E427F0013C114 /* CoreWLAN.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9D260871E8E44CB0013C114 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				E9D260881E8E44CB0013C114 /* Reachability */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		E9D260881E8E44CB0013C114 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				E9D260891E8E44CB0013C114 /* Reachability.swift */,
+			);
+			path = Reachability;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,7 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9D260771E8E3BB50013C114 /* ViewController.swift in Sources */,
+				E9D2608A1E8E44CB0013C114 /* Reachability.swift in Sources */,
 				E9D260751E8E3BB50013C114 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
